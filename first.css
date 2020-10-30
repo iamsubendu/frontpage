@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    width: 100%;
+    align-items: stretch;
+}
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none; 
+    background: black;
+    margin: 0;
+    align-items: baseline;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+    color: white;
+  }
+  
+  .submit-btn {
+      padding: 10px;
+      border: 1px solid white;
+      background: black;
+      color: whitesmoke;
+      text-transform: uppercase;
+      position: relative;
+      left: 600px;
+  }
+  .nav-head {
+      font-size: 30px;
+      position: relative;
+      left: 130px;
+  }
+  .collections {
+      position: relative;
+      left: 400px;
+  }
+  .experiment {
+    position: relative;
+    left: 450px;
+  }
+  .search {
+    position: relative;
+    left: 500px;
+  }
+
+  .main {
+      position: relative;
+      left: 200px;
+  }
+  .main h1 {
+      position: relative;
+      top: 50px;
+  }
+  .main p {
+    position: relative;
+    top: 70px;
+   }
+   .main ul {
+    position: relative;
+    top: 75px;
+    right: 30px;
+    color: rgb(124, 116, 116);
+   }
+
+   .horizontal-one {
+    border-top: groove;
+    width: 70%;
+    position: relative;
+    top: 130px;
+    left: 190px;
+    }
+
+
+    .container-one {
+        position: relative;
+        left: 200px;
+        top: 150px;
+    }
+   
+    .grid-one {
+        display: grid;
+        
+    }
+  
+  @media all and (max-width: 600px) {
+    .navbar {
+      flex-flow: column wrap;
+      padding: 0;
+      align-items: center;
+    }
+    .navbar a { 
+      text-align: center; 
+      padding: 10px;
+      }
+      .submit-btn {
+        border: none;
+        background: black;
+        color: whitesmoke;
+        text-transform: capitalize;
+    }
+  }
