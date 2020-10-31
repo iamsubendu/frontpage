@@ -1,37 +1,49 @@
-body {
-    margin: 0;
-    width: 100%;
-    align-items: stretch;
+html, body {
+  overflow-x: hidden;
+  margin: 0;
 }
-.navbar {
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none; 
-    background: black;
-    margin: 0;
-    align-items: baseline;
-  }
+
+.navigation {
+   background: black;
+   display: flex;
+   flex-flow: row wrap;
+   align-items: baseline;
+   list-style: none;
+   margin: 0;
+   position: fixed;
+   width: 100%;
+   height: 80px;
+   z-index: 9999;
+   background-color: black;
+}
   
-  .navbar a {
+  .navigation a {
     text-decoration: none;
     display: block;
     padding: 30px;
     color: white;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  .navigation a:hover {
+    background: rgb(0, 0, 0);
+    color: black;
   }
   
   .submit-btn {
-      padding: 10px;
       border: 1px solid white;
       background: black;
       color: whitesmoke;
       text-transform: uppercase;
       position: relative;
       left: 600px;
+      padding: 5px;
   }
   .nav-head {
       font-size: 30px;
       position: relative;
-      left: 130px;
+      left: 120px;
   }
   .collections {
       position: relative;
@@ -46,19 +58,20 @@ body {
     left: 500px;
   }
 
-  .main {
+  .upper-content {
       position: relative;
-      left: 200px;
-  }
-  .main h1 {
+      left: 190px;
+      top: 100px;
+      }
+  .upper-content h1 {
       position: relative;
       top: 50px;
   }
-  .main p {
+  .upper-content p {
     position: relative;
     top: 70px;
    }
-   .main ul {
+   .upper-content ul {
     position: relative;
     top: 75px;
     right: 30px;
@@ -69,36 +82,490 @@ body {
     border-top: groove;
     width: 70%;
     position: relative;
-    top: 130px;
-    left: 190px;
+    top: 200px;
+    left: 170px;
     }
 
 
     .container-one {
         position: relative;
-        left: 200px;
-        top: 150px;
+        left: 190px;
+        top: 200px;
     }
    
-    .grid-one {
-        display: grid;
-        
+    .grid {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+       }
+
+   
+    .item-one {
+      padding-right: 40px;
+    }  
+    
+    .container-one .header {
+      position: relative;
+      top: 30px;
+      color: rgb(78, 72, 64);
     }
-  
-  @media all and (max-width: 600px) {
-    .navbar {
-      flex-flow: column wrap;
-      padding: 0;
-      align-items: center;
+
+    .container-one .item-one {
+      position: relative;
+      top: 80px;
     }
-    .navbar a { 
-      text-align: center; 
+    .container-one .item-two {
+      position: relative;
+      top: 80px;
+    }
+
+    .line-one {
+      color: rgb(204, 195, 160);
+    }
+
+    .line-two {
+      color: rgb(92, 77, 77);
+    }
+
+    .horizontal-two {
+      border-top: groove;
+      width: 70%;
+      position: relative;
+      top: 340px;
+      left: 170px;
       padding: 10px;
-      }
-      .submit-btn {
-        border: none;
-        background: black;
-        color: whitesmoke;
-        text-transform: capitalize;
     }
+
+    .container-two {
+      position: relative;
+      left: 190px;
+      top: 370px;
   }
+    
+    .container-two .item-one,.item-two {
+      position: relative;
+      top: 50px;
+    }
+
+    .horizontal-three {
+      border-top: groove;
+      width: 73%;
+      position: relative;
+      top: 480px;
+      left: 170px;
+      padding: 10px;
+    }
+
+    .grid-three {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      position: relative;
+      top: 50px;
+    }
+    
+    .container-three {
+      position: relative;
+      left: 170px;
+      top: 500px;
+    }
+
+    .container-three img {
+      width: 350px;
+      height: 300px;
+    }
+
+    .grid-four {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      position: relative;
+      top: 100px;
+    }
+    .grid-five {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      position: relative;
+      top: 150px;
+    }
+    .grid-six {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      position: relative;
+      top: 200px;
+    }
+    .grid-seven {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      position: relative;
+      top: 250px;
+    }
+    .grid-eight {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      position: relative;
+      top: 300px;
+    }
+    .grid-nine {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      position: relative;
+      top: 350px;
+    }
+    .grid-ten {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      position: relative;
+      top: 400px;
+    }
+    .grid-eleven {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      position: relative;
+      top: 450px;
+    }
+    .grid-twelve {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      position: relative;
+      top: 500px;
+    }
+    .grid-thirteen {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      position: relative;
+      top: 550px;
+    }
+    
+    .item-four, .item-five {
+      position: relative;
+      padding-left: 25px;
+    }
+
+    
+
+    .footer {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: baseline;
+      left: 0;
+      top: 1100px;
+      padding: 50px;
+      height: 100px;
+    }
+    .footer img {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      left: 900px;
+
+    }
+    
+    .copyright {
+      font-size: 15px;
+      position: relative;
+      left: 850px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .footer-header {
+      position: relative;
+      left: 200px;
+      font-size: 30px;
+    }
+
+
+ /* ----------------------------------------
+ -------------------------------------
+ for very small screens
+
+ -------*/
+    @media only screen and (max-width: 600px) {
+      .navigation {
+        background: black;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: baseline;
+        list-style: none;
+        margin: 0;
+        width: 100%;
+        background-color: black;
+     }
+       
+       .navigation a {
+         text-decoration: none;
+         display: block;
+         padding: 30px;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+       }
+     
+       .navigation a:hover {
+         background: rgb(0, 0, 0);
+         color: black;
+       }
+       
+       .submit-btn {
+           border: 1px solid white;
+           background: black;
+           color: whitesmoke;
+           text-transform: uppercase;
+           position: relative;
+           left: 600px;
+           padding: 5px;
+       }
+       .nav-head {
+           font-size: 30px;
+           position: relative;
+           left: 120px;
+       }
+       .collections {
+           position: relative;
+           left: 400px;
+       }
+       .experiment {
+         position: relative;
+         left: 450px;
+       }
+       .search {
+         position: relative;
+         left: 500px;
+       }
+     
+       .upper-content {
+           position: relative;
+           left: 190px;
+           top: 100px;
+           }
+       .upper-content h1 {
+           position: relative;
+           top: 50px;
+       }
+       .upper-content p {
+         position: relative;
+         top: 70px;
+        }
+        .upper-content ul {
+         position: relative;
+         top: 75px;
+         right: 30px;
+         color: rgb(124, 116, 116);
+        }
+     
+        .horizontal-one {
+         border-top: groove;
+         width: 70%;
+         position: relative;
+         top: 200px;
+         left: 170px;
+         }
+     
+     
+         .container-one {
+             position: relative;
+             left: 190px;
+             top: 200px;
+         }
+        
+         .grid {
+             display: inline-grid;
+             grid-template-columns: auto auto;
+            }
+     
+        
+         .item-one {
+           padding-right: 40px;
+         }  
+         
+         .container-one .header {
+           position: relative;
+           top: 30px;
+           color: rgb(78, 72, 64);
+         }
+     
+         .container-one .item-one {
+           position: relative;
+           top: 80px;
+         }
+         .container-one .item-two {
+           position: relative;
+           top: 80px;
+         }
+     
+         .line-one {
+           color: rgb(204, 195, 160);
+         }
+     
+         .line-two {
+           color: rgb(92, 77, 77);
+         }
+     
+         .horizontal-two {
+           border-top: groove;
+           width: 70%;
+           position: relative;
+           top: 340px;
+           left: 170px;
+           padding: 10px;
+         }
+     
+         .container-two {
+           position: relative;
+           left: 190px;
+           top: 370px;
+       }
+         
+         .container-two .item-one,.item-two {
+           position: relative;
+           top: 50px;
+         }
+     
+         .horizontal-three {
+           border-top: groove;
+           width: 73%;
+           position: relative;
+           top: 480px;
+           left: 170px;
+           padding: 10px;
+         }
+     
+         .grid-three {
+           display: inline-grid;
+           grid-template-columns: auto auto auto;
+           position: relative;
+           top: 50px;
+         }
+         
+         .container-three {
+           position: relative;
+           left: 170px;
+           top: 500px;
+         }
+     
+         .container-three img {
+           width: 350px;
+           height: 300px;
+         }
+     
+         .grid-four {
+           display: inline-grid;
+           grid-template-columns: auto auto auto;
+           position: relative;
+           top: 100px;
+         }
+         .grid-five {
+           display: inline-grid;
+           grid-template-columns: auto auto auto;
+           position: relative;
+           top: 150px;
+         }
+         .grid-six {
+           display: inline-grid;
+           grid-template-columns: auto auto auto;
+           position: relative;
+           top: 200px;
+         }
+         .grid-seven {
+           display: inline-grid;
+           grid-template-columns: auto auto auto;
+           position: relative;
+           top: 250px;
+         }
+         .grid-eight {
+           display: inline-grid;
+           grid-template-columns: auto auto auto;
+           position: relative;
+           top: 300px;
+         }
+         .grid-nine {
+           display: inline-grid;
+           grid-template-columns: auto auto auto;
+           position: relative;
+           top: 350px;
+         }
+         .grid-ten {
+           display: inline-grid;
+           grid-template-columns: auto auto auto;
+           position: relative;
+           top: 400px;
+         }
+         .grid-eleven {
+           display: inline-grid;
+           grid-template-columns: auto auto auto;
+           position: relative;
+           top: 450px;
+         }
+         .grid-twelve {
+           display: inline-grid;
+           grid-template-columns: auto auto auto;
+           position: relative;
+           top: 500px;
+         }
+         .grid-thirteen {
+           display: inline-grid;
+           grid-template-columns: auto auto auto;
+           position: relative;
+           top: 550px;
+         }
+         
+         .item-four, .item-five {
+           position: relative;
+           padding-left: 25px;
+         }
+     
+         
+     
+         .footer {
+           position: relative;
+           bottom: 0;
+           width: 100%;
+           background-color: black;
+           color: white;
+           display: flex;
+           align-items: baseline;
+           left: 0;
+           top: 1100px;
+           padding: 50px;
+           height: 100px;
+         }
+         .footer img {
+           width: 50px;
+           height: 50px;
+           position: relative;
+           left: 900px;
+     
+         }
+         
+         .copyright {
+           font-size: 15px;
+           position: relative;
+           left: 850px;
+           text-decoration: none;
+           color: white;
+         }
+     
+         .footer-header {
+           position: relative;
+           left: 200px;
+           font-size: 30px;
+         }
+    }
+
+   /* ----------------------------------------
+ -------------------------------------
+ for very small tablets
+
+ -------*/
+    @media only screen and (min-width: 600px) {}
+
+
+
+    /* ----------------------------------------
+ -------------------------------------
+ for very small screens
+
+ -------*/
+    @media only screen and (min-width: 768px) {}
